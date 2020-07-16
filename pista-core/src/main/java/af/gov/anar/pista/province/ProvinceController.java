@@ -25,7 +25,7 @@ public class ProvinceController {
     @Autowired
     private ProvinceService service;
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity<List>", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity<List>", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -43,7 +43,7 @@ public class ProvinceController {
     }
 
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -61,7 +61,7 @@ public class ProvinceController {
     }
 
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -78,7 +78,7 @@ public class ProvinceController {
         return ResponseEntity.ok(service.findByName(name));
     }
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -96,7 +96,7 @@ public class ProvinceController {
         return ResponseEntity.ok(service.findByProvinceCode(code));
     }
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -119,7 +119,7 @@ public class ProvinceController {
         return ResponseEntity.ok(service.save(obj));
     }
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -137,7 +137,7 @@ public class ProvinceController {
     }
 
 
-    @ApiOperation(value = "test endpoint for producing a ResponseEntity", response = ResponseEntity.class)
+    @ApiOperation(value = " endpoint for producing a ResponseEntity", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successfully retrieved list"),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
@@ -153,9 +153,8 @@ public class ProvinceController {
      public @ResponseBody
      ResponseEntity<Void> delete(@PathVariable(name = "id", required = true)
      String id){
-
-     service.delete(id);
-     return ResponseEntity.noContent().build();
+             service.delete(id);
+             return ResponseEntity.noContent().build();
      }
 
 }
