@@ -1,4 +1,4 @@
-## Pista CMS
+## Anar with Clean Architecture
 
 #### How to setup the project
 - Download Keycloak from (https://www.keycloak.org/downloads.html)
@@ -9,38 +9,38 @@ cd anar-parent/script/setup/
 bash setup.sh
 cd ../..
 ```
-- Clone pista repository
+- Clone anar-clean repository
 
 ```xml
-git clone https://github.com/nsia-infosys/pista.git
+git clone https://github.com/nsia-infosys/anar-clean.git
 ```
-- Open the pista with `intellij` IDE
+- Open the anar-clean with `intellij` IDE
 - Add imported libraries in `pom.xml` from `File>New>Module from Existing Sources...`
 
-- Setup pista-web
+- Setup anar-clean-web
 ```xml
-git clone https://github.com/nsia-infosys/pista-web
-cd pista-web
+git clone https://github.com/nsia-infosys/anar-clean-web
+cd anar-clean-web
 npm install 
 npm start
 ```
 
 #### How to build the source code
 - Run the Keycloak `cd keycloak_path/bin` and `bash standalone.sh`
-- Run `main` method from `af.gov.anar.pista.Application`
+- Run `main` method from `af.gov.anar.anar-clean.Application`
 
 #### How to setup development enviroment
 ```
-$ cd pista
+$ cd anar-clean
 $ bash setup.sh
 $ mvn clean install -DskipTests
-$ cd pista-core
+$ cd anar-clean-core
 $ mvn spring-boot:run
 ```
 
-Client Sid UI: https://github.com/nsia-infosys/pista-web
+Client Sid UI: https://github.com/nsia-infosys/anar-clean-web
 
 #### Documentation
 
 Refer to this repository **Wiki** section.
-https://github.com/nsia-infosys/pista/wiki
+https://github.com/nsia-infosys/anar-clean/wiki
