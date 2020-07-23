@@ -28,19 +28,14 @@
 	<modules>
         <module>anar/anar-lib-mail</module>
         <module>anar/anar-lib-api</module>
-<!--		<module>anar-lib-metrics</module>-->
 		<module>anar/anar-lib-crypto-jce</module>
 		<module>anar/anar-lib-hmac</module>
 		<module>anar/anar-lib-core</module>
 		<module>anar/anar-lib-audit</module>
 		<module>anar/anar-lib-file</module>
-<!--		<module>anar-lib-cors</module>-->
-		<!-- <module>anar-lib-workflow</module> -->
 		<module>anar/anar-lib-json</module>
-<!--		<module>anar-lib-reportutil</module>-->
 		<module>anar/anar-lib-logger</module>
 		<module>anar/anar-lib-date</module>
-<!--		<module>anar-lib-math</module>-->
 		<module>anar-presentation</module>
 		<module>anar-domain</module>
 		<module>anar-application</module>

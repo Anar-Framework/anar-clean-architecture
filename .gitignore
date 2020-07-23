@@ -21,6 +21,7 @@ logs/
 /anar-lib-reportutil
 /anar-lib-json
 /anar-lib-math
+/anar
 
 ### STS ###
 .apt_generated
